@@ -10,8 +10,7 @@ body {
         "footer footer";
     grid-gap: 0px;
     grid-template-rows: auto 90vh auto;
-    grid-template-columns: 20vw auto;
-
+    grid-template-columns: auto auto;
 }
 
 #header {
@@ -20,7 +19,8 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0vh;
-    background-color: #eceff1;
+    padding-right: 1vw;
+
 }
 
 #logo {
@@ -28,14 +28,27 @@ body {
     height: auto;
 }
 
+#navig ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+}
+
+#navig ul li{
+    margin-right: 20px;
+}
+
+
+
 #col{
     grid-area: col;
     background-color: aqua;
 }
 
+
+
 #text{
     grid-area: text;
-    background-color: bisque;
 }
 
 h1{
@@ -46,7 +59,21 @@ h1{
     display: none;
 }
 
+#template{
+    height: 25%;
+}
+
 #footer{
     grid-area: footer;
     background-color: black;
 }
+
+a{
+    text-decoration: none;
+    transition: font-size 0.2s;
+  }
+  
+  a:hover{
+    background-color: #eceff1;
+    font-size: 1.5em;
+  }
